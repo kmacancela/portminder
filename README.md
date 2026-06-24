@@ -10,6 +10,7 @@ ports explain 3000
 ports free 3000
 ports cleanup --dry-run
 ports end-day
+ports setup-codex
 ```
 
 Built for developers, teams, and AI coding agents that need predictable local development cleanup.
@@ -116,6 +117,17 @@ ports protect ~/work/critical-db
 ports trust "npm run dev"
 ports trust ~/work/demo-app
 ```
+
+### `ports setup-codex`
+
+Installs the bundled PortMinder Codex skill into `~/.codex/skills/portminder`, making it available to Codex from any project.
+
+```bash
+ports setup-codex
+ports setup-codex --force
+```
+
+The command is safe to rerun. It copies the skill by default and only replaces a different existing install when `--force` is passed.
 
 ## Fixture Mode
 

@@ -84,3 +84,13 @@ Adds a protected port, process, or project to the config file.
 ## `ports trust <target>`
 
 Adds a trusted command or project to the config file.
+
+## `ports setup-codex`
+
+Installs the bundled PortMinder skill into Codex's global skills folder so Codex can use PortMinder from any project.
+
+Options:
+
+- `--force`: replace an existing different install.
+- `--codex-home <path>`: override the Codex home directory.
+- `--json`

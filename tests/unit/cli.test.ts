@@ -17,6 +17,7 @@ describe("CLI wiring", () => {
         "doctor",
         "protect",
         "trust",
+        "setup-codex",
       ]),
     );
   });

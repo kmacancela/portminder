@@ -9,6 +9,7 @@ import { registerExplainCommand } from "./commands/explain.js";
 import { registerFreeCommand } from "./commands/free.js";
 import { registerListCommand, runDefaultList } from "./commands/list.js";
 import { registerProtectCommand } from "./commands/protect.js";
+import { registerSetupCodexCommand } from "./commands/setupCodex.js";
 import { registerStopCommand } from "./commands/stop.js";
 import { registerTrustCommand } from "./commands/trust.js";
 
@@ -32,6 +33,7 @@ export function createProgram(): Command {
   registerDoctorCommand(program);
   registerProtectCommand(program);
   registerTrustCommand(program);
+  registerSetupCodexCommand(program);
 
   return program;
 }
